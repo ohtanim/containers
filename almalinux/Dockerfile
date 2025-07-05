@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 almalinux:latest
+FROM almalinux:latest
 
 USER root
 RUN dnf install -q -y --nodocs \

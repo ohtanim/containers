@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 registry.access.redhat.com/ubi9/python-311
+FROM registry.access.redhat.com/ubi9/python-311
 
 USER root
 RUN (dnf upgrade --disableplugin=subscription-manager -y || dnf upgrade --disableplugin=subscription-manager -y --nobest) && \
